@@ -10,7 +10,7 @@ from opensteuerauszug.model.ech0196 import (
     ListOfBankAccounts, BankAccount, BankAccountPayment, BankAccountNumber,
     BankAccountTaxValue,
     ListOfSecurities, Depot, Security, SecurityStock, SecurityPayment, DepotNumber,
-    CurrencyId, QuotationType,
+    QuotationType,
     ValorNumber,
     Institution,
     Client,
@@ -20,8 +20,7 @@ from opensteuerauszug.model.ech0196 import (
     LiabilityAccount,
     LiabilityAccountTaxValue,
     ListOfLiabilities,
-    BankAccountName,
-    CountryIdISO2Type
+    BankAccountName
 )
 
 DEFAULT_TEST_PERIOD_FROM = date(2023, 1, 1)
@@ -40,7 +39,7 @@ def create_security_stock(
     quantity: Decimal,
     mutation: bool,
     name: str = "Stock Event",
-    balance_currency: CurrencyId = "CHF",
+    balance_currency: str = "CHF",
     quotation_type: QuotationType = "PIECE"
 ) -> SecurityStock:
     return SecurityStock(
@@ -56,7 +55,7 @@ def create_security_payment(
     payment_date: date,
     quantity: Decimal = Decimal("10"),
     name: str = "Dividend",
-    amount_currency: CurrencyId = "CHF",
+    amount_currency: str = "CHF",
     quotation_type: QuotationType = "PIECE"
 ) -> SecurityPayment:
     return SecurityPayment(

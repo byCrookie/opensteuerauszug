@@ -6,7 +6,7 @@ import logging
 from opensteuerauszug.model.ech0196 import (
     Security, SecurityTaxValue, TaxStatement, SecurityStock,
     Client, CantonAbbreviation, LiabilityAccount, LiabilityAccountTaxValue,
-    ListOfLiabilities, BankAccountName, CountryIdISO2Type, CurrencyId, LiabilityAccountPayment
+    ListOfLiabilities, BankAccountName, LiabilityAccountPayment
 )
 from opensteuerauszug.model.critical_warning import CriticalWarning, CriticalWarningCategory
 from opensteuerauszug.util.sorting import find_index_of_date, sort_security_stocks, sort_payments, sort_security_payments
