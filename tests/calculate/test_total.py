@@ -3,7 +3,7 @@ from decimal import Decimal
 from opensteuerauszug.model.ech0196 import (
     ValorNumber, ISINType,
     PositiveDecimal,
-    BankAccountNumber, BankAccountName, CountryIdISO2Type, CurrencyId, Depot, DepotNumber
+    BankAccountNumber, BankAccountName, Depot, DepotNumber
 )
 
 from opensteuerauszug.calculate.base import CalculationMode

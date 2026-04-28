@@ -6,7 +6,7 @@ from typing import Optional, List
 
 from opensteuerauszug.core.security import determine_security_type, SecurityType
 from opensteuerauszug.model.ech0196 import (
-    Security, SecurityPayment, CurrencyId
+    Security, SecurityPayment
 )
 
 
